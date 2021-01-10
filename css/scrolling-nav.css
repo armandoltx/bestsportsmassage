@@ -1,32 +1,48 @@
 /* ========= GENERAL  ============ */
 body {
   background-color: #161616;
+  font-family: 'Montserrat', sans-serif;
 }
 
 section {
-  padding: 80px 0;
+  padding: 65px 0;
 }
 
-.btn {
-  background-color: #01aac1;
-  border-color: #01aac1;
+h1, h2, h3, h4, h5, h6, a {
+  font-family: 'Roboto', sans-serif;
 }
 
-.btn:hover {
+.btn-primary  {
+  background-color: #009dc4;
+  border-color: #009dc4;
+}
+
+.btn-primary :hover {
   background-color: #fff;
-  color: #01aac1;
-  border-color: #01aac1;
+  color: #009dc4;
+  border-color: #009dc4;
 }
 
 .btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle  {
   background-color: #fff;
-  color: #01aac1;
-  border-color: #01aac1;
+  color: #009dc4;
+  border-color: #009dc4;
 }
 
 .btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .show>.btn-primary.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.2rem rgba(1, 170, 193, .5);
 }
+
+.btn-outline-primary {
+  border-color: #009dc4;
+}
+
+.divider {
+    border-top: 1px solid #009dc4;
+    width: 80%;
+}
+
+
 /* ======== HEADER ======================= */
 
 header {
@@ -61,12 +77,16 @@ header {
   }
 }
 
+.h1-home {
+  text-shadow: 2px 2px #009dc4;
+}
+
 /* ======== SERVICES ======================= */
 
 #services .card {
   margin: 10px 10px;
-  background-color:  #01aac1;
-  border: 1px solid #01aac1;
+  background-color:  #000;
+  border: 1px solid #009dc4;
 }
 
 .card {
@@ -85,6 +105,10 @@ header {
   grid-template-areas: "frontAndBack";
   transform-style: preserve-3d;
   transition: all 0.7s ease;
+}
+
+.card-subtitle {
+  color: #009dc4;
 }
 
 .card-flip div {
@@ -107,7 +131,11 @@ header {
 
 .card-title {
   color: white;
-  font-size: 2.3rem;
+  font-size: 1.5rem;
+}
+
+p.card-title {
+  margin: 0;
 }
 
 
@@ -117,10 +145,16 @@ header {
   color: #ffffff;
 }
 
+.logos {
+  width: 20%;
+  padding: 0 5px;
+}
+
+
 /* ======== PRICING ======================= */
 
 section.pricing {
-  background: #01aac1;
+  background: #009dc4;
 }
 
 .pricing .card {
@@ -166,6 +200,7 @@ section.pricing {
   padding: 1rem;
   opacity: 0.7;
   transition: all 0.2s;
+  width: 60%;
 }
 
 .pricing p.space-20 {
@@ -196,4 +231,11 @@ section.pricing {
 
 .cliniko {
   padding: 10px 0;
+}
+
+/* ======== CONTACT ======================= */
+
+section#contact {
+  background: #009dc4;
+  color: #fff;
 }
