@@ -1,0 +1,244 @@
+/* ========= GENERAL  ============ */
+body {
+  background-color: #161616;
+  font-family: 'Montserrat', sans-serif;
+}
+
+section {
+  padding: 65px 0;
+}
+
+h1, h2, h3, h4, h5, h6, a {
+  font-family: 'Roboto', sans-serif;
+}
+
+.btn-primary  {
+  background-color: #009dc4;
+  border-color: #009dc4;
+}
+
+.btn-primary :hover {
+  background-color: #fff;
+  color: #009dc4;
+  border-color: #009dc4;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle  {
+  background-color: #fff;
+  color: #009dc4;
+  border-color: #009dc4;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .show>.btn-primary.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(1, 170, 193, .5);
+}
+
+.btn-outline-primary {
+  border-color: #009dc4;
+}
+
+.divider {
+    border-top: 1px solid #009dc4;
+    width: 80%;
+}
+
+.navbar-dark .navbar-brand {
+    width: 75%;
+}
+
+/* ======== HEADER ======================= */
+
+header {
+  margin-top: 70px;
+  padding-top: 10rem;
+  padding-bottom: calc(10rem - 4.5rem);
+  background-image: url(../images/medical-research.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+@media (min-width: 992px) {
+  header.masthead {
+    height: 100vh;
+    min-height: 40rem;
+    padding-top: 4.5rem;
+    padding-bottom: 0;
+  }
+  header.masthead p {
+    font-size: 1.15rem;
+  }
+  header.masthead h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  header.masthead h1 {
+    font-size: 3rem;
+  }
+}
+
+.h1-home {
+  text-shadow: 2px 2px #009dc4;
+}
+
+/* ======== SERVICES ======================= */
+
+#services .card {
+  margin: 10px 10px;
+  background-color:  #000;
+  border: 1px solid #009dc4;
+}
+
+.card {
+  margin: 10px 10px;
+}
+
+/* Flip Cards CSS */
+.card-container {
+  display: grid;
+  perspective: 700px;
+}
+
+.card-flip {
+  display: grid;
+  grid-template: 1fr / 1fr;
+  grid-template-areas: "frontAndBack";
+  transform-style: preserve-3d;
+  transition: all 0.7s ease;
+}
+
+.card-subtitle {
+  color: #009dc4;
+}
+
+.card-flip div {
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+}
+
+.front {
+  grid-area: frontAndBack;
+}
+
+.back {
+  grid-area: frontAndBack;
+  transform: rotateY(-180deg);
+}
+
+.card-container:hover .card-flip {
+  transform: rotateY(180deg);
+}
+
+.card-title {
+  color: white;
+  font-size: 1.5rem;
+}
+
+p.card-title {
+  margin: 0;
+}
+
+
+/* ======== ABOUT ======================= */
+
+#about {
+  color: #ffffff;
+}
+
+.logos {
+  width: 20%;
+  padding: 0 5px;
+}
+
+
+/* ======== PRICING ======================= */
+
+section.pricing {
+  background: #009dc4;
+}
+
+.pricing .card {
+  border: none;
+  border-radius: 1rem;
+  transition: all 0.2s;
+  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+}
+
+.pricing hr {
+  margin: 1.5rem 0;
+}
+
+.pricing .card-title {
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+  letter-spacing: .1rem;
+  font-weight: bold;
+}
+
+.pricing .card-price {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.pricing .card-price .period {
+  font-size: 0.8rem;
+}
+
+.pricing ul li {
+  margin-bottom: 1rem;
+}
+
+.pricing .text-muted {
+  opacity: 0.7;
+}
+
+.pricing .btn {
+  font-size: 80%;
+  border-radius: 5rem;
+  letter-spacing: .1rem;
+  font-weight: bold;
+  padding: 1rem;
+  opacity: 0.7;
+  transition: all 0.2s;
+  width: 60%;
+}
+
+.pricing p.space-20 {
+  padding-bottom: 20px;
+}
+
+.pricing p.space-33 {
+  padding-bottom: 33px;
+}
+
+.pricing p.space-62 {
+  padding: 31px 0;
+}
+/* Hover Effects on Card */
+
+@media (min-width: 992px) {
+  .pricing .card:hover {
+    margin-top: -.25rem;
+    margin-bottom: .25rem;
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
+  }
+  .pricing .card:hover .btn {
+    opacity: 1;
+  }
+}
+
+/* ======== BOOKING ======================= */
+
+.cliniko {
+  padding: 10px 0;
+}
+
+/* ======== CONTACT ======================= */
+
+section#contact {
+  background: #009dc4;
+  color: #fff;
+}
