@@ -217,6 +217,15 @@ section.pricing {
 .pricing p.space-62 {
   padding: 31px 0;
 }
+
+p.space-padding-1 {
+  padding-bottom: 39px;
+}
+
+space-padding-2 {
+  padding-bottom: 15px;
+}
+
 /* Hover Effects on Card */
 
 @media (min-width: 992px) {
